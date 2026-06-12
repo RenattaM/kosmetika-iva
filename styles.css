@@ -114,7 +114,7 @@ a {
   display: none;
   width: 44px;
   height: 44px;
-  border-radius: 999px;
+  border-radius: 10px;
   border: none;
   background: var(--gold);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
