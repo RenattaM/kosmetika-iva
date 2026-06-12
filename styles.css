@@ -54,22 +54,22 @@ a {
 
 /* ============ Header ============ */
 .site-header {
-  position: absolute; /* místo sticky */
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 50;
 
-  background: transparent; /* bude nad obrázkem */
-  border-bottom: none;
-  backdrop-filter: none;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(70, 85, 67, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 8px;
   padding: 14px 0;
 }
 
@@ -98,16 +98,15 @@ a {
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--green);
-  font-weight: 700;
-  padding: 8px 4px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
 }
 .nav-link:hover {
-  color: var(--green-dark);
-}
-
-.nav-link:hover {
+  background: rgba(95, 111, 85, 0.09);
   color: var(--green-dark);
 }
 
@@ -181,7 +180,7 @@ a {
 
 .hero-content {
   position: relative;
-  padding: 110px 0 56px;
+  padding: 56px 0;
   text-align: center;
 }
 
