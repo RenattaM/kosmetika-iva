@@ -103,7 +103,9 @@ a {
   font-weight: 600;
   padding: 8px 14px;
   border-radius: 8px;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 .nav-link:hover {
   background: rgba(95, 111, 85, 0.09);
@@ -171,30 +173,30 @@ a {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    90deg,
-    rgba(246, 247, 242, 0.86) 0%,
-    rgba(246, 247, 242, 0.55) 55%,
-    rgba(246, 247, 242, 0.25) 100%
+    105deg,
+    rgba(30, 40, 30, 0.72) 0%,
+    rgba(30, 40, 30, 0.45) 55%,
+    rgba(30, 40, 30, 0.1) 100%
   );
 }
 
 .hero-content {
   position: relative;
   padding: 56px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .hero h1 {
   margin: 0;
   font-size: clamp(42px, 6vw, 64px);
   letter-spacing: -0.8px;
-  color: var(--green);
+  color: #ffffff;
   font-weight: 800;
 }
 
 .hero-subtitle {
   margin: 10px 0 22px;
-  color: rgba(70, 85, 67, 0.85);
+  color: #ffffff;
   font-size: 18px;
 }
 
