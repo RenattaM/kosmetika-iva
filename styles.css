@@ -116,18 +116,18 @@ a {
   display: none;
   width: 44px;
   height: 44px;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
-  background: var(--gold);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
 }
 .burger span {
   display: block;
-  width: 18px;
-  height: 2px;
-  background: #1e241e;
-  margin: 4px auto;
+  width: 22px;
+  height: 3px;
+  background: var(--green);
+  margin: 5px auto;
   border-radius: 2px;
 }
 
