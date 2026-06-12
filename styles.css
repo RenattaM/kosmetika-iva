@@ -212,12 +212,14 @@ a {
   border: 1px solid transparent;
 }
 .btn-primary {
-  background: var(--gold);
-  color: var(--green);
-  box-shadow: 0 10px 26px rgba(242, 204, 56, 0.35);
+  background: rgba(242, 204, 56, 0.18);
+  border: 1.5px solid rgba(242, 204, 56, 0.55);
+  color: #f2cc38;
+  box-shadow: none;
 }
 .btn-primary:hover {
-  background: var(--gold-dark);
+  background: rgba(242, 204, 56, 0.28);
+  border-color: rgba(242, 204, 56, 0.8);
 }
 
 /* ============ Sekce ============ */
