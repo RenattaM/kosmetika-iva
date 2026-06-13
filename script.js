@@ -5,6 +5,14 @@
 
   if (year) year.textContent = new Date().getFullYear();
 
+  // Úvod – scroll na začátek pro desktop i mobil
+  document.querySelectorAll('a[href="#top"]').forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
   function setMenu(open) {
     if (!burger || !menu) return;
 
@@ -40,11 +48,21 @@
       setMenu(!isOpen);
     });
 
-    // zavřít menu po kliknutí na odkaz
+    // zavřít menu po kliknutí na odkaz, scroll až po animaci zavření
     menu.addEventListener("click", (e) => {
       const a = e.target.closest("a");
       if (!a) return;
+      const href = a.getAttribute("href");
+      e.preventDefault();
       setMenu(false);
+      setTimeout(() => {
+        if (href === "#top") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          const target = href && document.querySelector(href);
+          if (target) target.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
     });
 
     // zavřít při změně velikosti (když přejdeš na desktop)
