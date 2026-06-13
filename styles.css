@@ -163,7 +163,7 @@ a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("img/header studio.png"); /* tvoje fotka */
+  background-image: url("img/header studio.webp"); /* tvoje fotka */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ a {
 .about-image {
   height: 290px;
   border-radius: 14px;
-  background-image: url("img/salon.png");
+  background-image: url("img/salon.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
