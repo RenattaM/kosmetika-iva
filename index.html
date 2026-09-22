@@ -10,12 +10,43 @@
       content="Kosmetické studio Iva v Přerově – profesionální péče o pleť a další kosmetické služby. Objednejte se online."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.domena.cz/" />
+    <link rel="canonical" href="https://kosmetikaiva.cz/" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:title" content="Kosmetické studio Iva | Přerov" />
+    <meta
+      property="og:description"
+      content="Kosmetické studio Iva v Přerově – profesionální péče o pleť a další kosmetické služby. Objednejte se online."
+    />
+    <meta property="og:url" content="https://kosmetikaiva.cz/" />
+    <meta
+      property="og:image"
+      content="https://kosmetikaiva.cz/img/header-studio.webp"
+    />
+
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Kosmetické studio Iva",
+        "url": "https://kosmetikaiva.cz/",
+        "image": "https://kosmetikaiva.cz/img/header-studio.webp",
+        "telephone": "+420724094308",
+        "email": "kosmetikaivaprerov@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dr. Skaláka 1455/1",
+          "addressLocality": "Přerov",
+          "postalCode": "750 02",
+          "addressCountry": "CZ"
+        },
+        "sameAs": ["https://instagram.com/kosmeticke_studio_iva"]
+      }
+    </script>
   </head>
 
   <body>
@@ -25,8 +56,11 @@
         <nav class="nav" aria-label="Hlavní navigace">
           <a class="nav-link" href="#top">Úvod</a>
           <a class="nav-link" href="#omne">O mně</a>
-          <a class="nav-link" href="#cenik">Služby a ceník</a>
+          <a class="nav-link" href="#sluzby">Služby</a>
+          <a class="nav-link" href="#cenik">Ceník</a>
           <a class="nav-link" href="#kontakt">Kontakt</a>
+          <!-- TODO: doplnit odkaz na Reservio -->
+          <a class="nav-cta" href="#">Rezervace</a>
         </nav>
 
         <button
@@ -45,8 +79,11 @@
         <div class="container mobile-menu-inner">
           <a class="mobile-link" href="#top">Úvod</a>
           <a class="mobile-link" href="#omne">O mně</a>
-          <a class="mobile-link" href="#cenik">Služby a ceník</a>
+          <a class="mobile-link" href="#sluzby">Služby</a>
+          <a class="mobile-link" href="#cenik">Ceník</a>
           <a class="mobile-link" href="#kontakt">Kontakt</a>
+          <!-- TODO: doplnit odkaz na Reservio -->
+          <a class="mobile-link mobile-link-cta" href="#">Rezervace</a>
         </div>
       </div>
     </header>
@@ -66,7 +103,43 @@
           Individuální kosmetická péče a relax v Přerově
         </p>
 
-        <a class="btn btn-primary" href="#kontakt"> Objednat se telefonicky </a>
+        <div class="hero-buttons">
+          <!-- TODO: doplnit odkaz na Reservio -->
+          <a class="btn btn-primary" href="#">Rezervace</a>
+          <a class="btn btn-secondary" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O mne -->
+    <section class="section about" id="omne">
+      <div class="container about-inner">
+        <div class="about-text">
+          <div class="kicker">O MNĚ</div>
+          <h2>Místo, kde se péče o pleť<br />spojuje s klidem a relaxem</h2>
+          <p>
+            Jmenuji se Iva a nabízím profesionální kosmetickou péči zaměřenou na
+            zdraví a přirozenou krásu pleti. Při ošetřeních kombinuji ruční
+            techniky s moderními kosmetickými metodami a pracuji s kvalitními
+            přírodními produkty. Mým cílem je, aby každá návštěva byla příjemným
+            zážitkem a chvílí klidu, kdy si můžete odpočinout a dopřát péči své
+            pleti.
+          </p>
+        </div>
+
+        <div class="about-image" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Citat -->
+    <section class="quote">
+      <div class="container quote-inner">
+        <div class="quote-mark">“</div>
+
+        <p class="quote-text">
+          Každá pleť je jiná. Péči vždy přizpůsobuji individuálním potřebám a
+          aktuálnímu stavu pokožky.
+        </p>
       </div>
     </section>
 
@@ -82,7 +155,7 @@
           <article class="service-card">
             <div
               class="service-img"
-              style="background-image: url(&quot;img/osetreni pleti.webp&quot;)"
+              style="background-image: url(&quot;img/osetreni-pleti.webp&quot;)"
               aria-hidden="true"
             ></div>
             <h3>Kosmetické ošetření pleti</h3>
@@ -110,7 +183,7 @@
           <article class="service-card">
             <div
               class="service-img"
-              style="background-image: url(&quot;img/rasa a oboci.webp&quot;)"
+              style="background-image: url(&quot;img/rasa-a-oboci.webp&quot;)"
               aria-hidden="true"
             ></div>
             <h3>Doplňkové kosmetické služby</h3>
@@ -120,43 +193,6 @@
             </p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- Citat -->
-    <section class="quote">
-      <div class="container quote-inner">
-        <div class="quote-mark">“</div>
-
-        <p class="quote-text">
-          Každá pleť je jiná. Péči vždy přizpůsobuji individuálním potřebám a
-          aktuálnímu stavu pokožky.
-        </p>
-
-        <div class="quote-person">
-          <!--   <img class="avatar" src="img/profil Iva.png" alt="Portrét" />
-          <div class="quote-name">Iva Postová</div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- O mne -->
-    <section class="section about" id="omne">
-      <div class="container about-inner">
-        <div class="about-text">
-          <div class="kicker">O MNĚ</div>
-          <h2>Místo, kde se péče o pleť<br />spojuje s klidem a relaxem</h2>
-          <p>
-            Jmenuji se Iva a nabízím profesionální kosmetickou péči zaměřenou na
-            zdraví a přirozenou krásu pleti. Při ošetřeních kombinuji ruční
-            techniky s moderními kosmetickými metodami a pracuji s kvalitními
-            přírodními produkty. Mým cílem je, aby každá návštěva byla příjemným
-            zážitkem a chvílí klidu, kdy si můžete odpočinout a dopřát péči své
-            pleti.
-          </p>
-        </div>
-
-        <div class="about-image" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -273,7 +309,8 @@
         </div>
 
         <p class="contact-lead">
-          Pro objednání mě prosím kontaktujte telefonicky.<br />
+          Pro objednání můžete využít rezervační systém nebo se objednat
+          telefonicky.<br />
           Ráda se Vám budu věnovat a společně vybereme péči, která bude Vaší
           pleti nejvíce vyhovovat.<br />
           Pokud hovor nezvednu, ozvu se Vám zpět.
@@ -339,6 +376,9 @@
         <div>
           © <span id="year"></span> Kosmetické studio Iva · Provozovatel: Ivana
           Postová, IČO: 73875031
+        </div>
+        <div class="footer-links">
+          <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
         </div>
       </div>
     </footer>
