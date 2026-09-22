@@ -362,7 +362,7 @@ a {
 }
 .quote-name {
   font-size: 12px;
-  color: rgba(70, 85, 67, 0.85);
+  color: rgba(70, 85, 67, 0.9);
 }
 
 /* O mne */
@@ -378,7 +378,7 @@ a {
 .kicker {
   font-size: 12px;
   letter-spacing: 1.2px;
-  color: rgba(70, 85, 67, 0.55);
+  color: rgba(70, 85, 67, 0.85);
   margin-bottom: 12px;
 }
 .about h2 {
@@ -522,7 +522,7 @@ a {
 .contact-meta .label {
   font-size: 11px;
   letter-spacing: 1px;
-  color: rgba(70, 85, 67, 0.6);
+  color: rgba(70, 85, 67, 0.85);
 }
 .contact-meta .value {
   font-size: 18px;
@@ -542,14 +542,14 @@ a {
 }
 .footer-inner {
   text-align: center;
-  color: rgba(42, 47, 42, 0.55);
+  color: rgba(42, 47, 42, 0.7);
   font-size: 12px;
 }
 .footer-links {
   margin-top: 6px;
 }
 .footer-links a {
-  color: rgba(42, 47, 42, 0.55);
+  color: rgba(42, 47, 42, 0.7);
   text-decoration: none;
 }
 .footer-links a:hover {
