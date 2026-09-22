@@ -14,13 +14,6 @@
     });
   });
 
-  // Dočasná tlačítka Rezervace (href="#") – nesmí stránku odskočit nahoru
-  document.querySelectorAll('a[href="#"]').forEach(a => {
-    a.addEventListener("click", e => {
-      e.preventDefault();
-    });
-  });
-
   function setMenu(open) {
     if (!burger || !menu) return;
 
@@ -73,9 +66,6 @@
 
       e.preventDefault();
       setMenu(false);
-
-      // dočasné tlačítko Rezervace bez odkazu – jen zavřít menu
-      if (href === "#") return;
 
       setTimeout(() => {
         if (href === "#top") {
